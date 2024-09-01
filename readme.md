@@ -26,8 +26,8 @@ To get started with the tools in this repository, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/web-app-pen-testing-toolkit.git
-    cd web-app-pen-testing-toolkit
+    git clone https://github.com/workwithnaveen7/Web-Application-Penetration-Testing-Toolkit.git
+    cd web-application-penetration-testing-toolkit
     ```
 
 2. **Navigate to the Desired Tool**:
