@@ -5,12 +5,12 @@ import os
 import csv
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Path for the report and SQLMap CSV output
+#path for the report and SQLMap CSV output
 REPORT_FILE = 'report_sql.html'
 SQLMAP_OUTPUT_DIR = os.path.join(os.getenv('LOCALAPPDATA'), 'sqlmap', 'output')
 
 def generate_report(vulnerabilities, base_url):
-    unique_vulnerabilities = list(set(vulnerabilities))  # Remove duplicates
+    unique_vulnerabilities = list(set(vulnerabilities)) 
     with open(REPORT_FILE, 'w') as f:
         f.write('<html>\n<head>\n<title>SQL Injection Vulnerability Report</title>\n</head>\n<body>\n')
         f.write('<h1>SQL Injection Vulnerability Report</h1>\n')
@@ -95,8 +95,8 @@ def extract_sqlmap_results(base_url):
                 with open(file_path, newline='') as csvfile:
                     reader = csv.reader(csvfile)
                     for row in reader:
-                        if row and base_url in row[0]:  # Ensure URL matches base URL
-                            vulnerabilities.append(row[0])  # Assuming the first column has the URL
+                        if row and base_url in row[0]: 
+                            vulnerabilities.append(row[0])  
             except Exception as e:
                 print(f"Failed to read CSV file {file_path}: {e}")
     return vulnerabilities
@@ -105,10 +105,10 @@ def extract_sqlmap_results(base_url):
 def main():
     base_url = input("Enter the base URL: ").strip()
     
-    # Clear previous vulnerabilities list
+
     vulnerabilities = []
 
-    # Run the SQL Injection tests on the base URL
+
     parsed_url = urlparse(base_url)
     query_params = parse_qs(parsed_url.query)
     
@@ -121,16 +121,16 @@ def main():
     else:
         handle_no_parameters(base_url)
     
-    # Extract only the vulnerabilities related to this base URL from SQLMap's output
+
     sqlmap_vulnerabilities = extract_sqlmap_results(base_url)
     
-    # Combine the direct test results with the SQLMap results
+
     vulnerabilities = vulnerabilities + sqlmap_vulnerabilities
     
-    # Ensure the vulnerabilities list is unique
+
     vulnerabilities = list(set(vulnerabilities))
     
-    # Generate the report with the current scan results
+    #generate report
     generate_report(vulnerabilities, base_url)
 
     
