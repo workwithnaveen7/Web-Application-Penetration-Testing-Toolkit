@@ -19,7 +19,7 @@ This Python-based tool is designed to scan a given URL for SQL injection vulnera
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/sql-injection-testing-tool.git
+   git clone https://github.com/workwithnaveen7/Web-Application-Penetration-Testing-Toolkit/tree/main/sql_injection_automation
    cd sql-injection-testing-tool
 
 2. **Install Required Python Packages:**
