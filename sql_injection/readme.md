@@ -21,3 +21,20 @@ This Python-based tool is designed to scan a given URL for SQL injection vulnera
    ```bash
    git clone https://github.com/yourusername/sql-injection-testing-tool.git
    cd sql-injection-testing-tool
+
+2. **Install Required Python Packages:**
+   ```bash
+   pip install requests
+
+3. **Ensure SQLMap is Installed: SQLMap must be installed and accessible from the command line.**
+   
+## Usage
+
+1. **Run the Tool:**
+   ```bash
+   python sql_injection.py
+
+2. **Enter the Base URL: When prompted, input the URL you want to test for SQL injection vulnerabilities.**
+
+3. **View the Report: After the scan completes, check the generated HTML report named report_sql.html in the project directory.**
+
