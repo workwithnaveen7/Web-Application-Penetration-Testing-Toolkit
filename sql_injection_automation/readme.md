@@ -1,4 +1,4 @@
-# SQL Injection Testing Tool
+# SQL Injection Testing Automation Tool
 
 This Python-based tool is designed to scan a given URL for SQL injection vulnerabilities. It uses both direct payload testing and SQLMap for automated vulnerability detection and generates a comprehensive HTML report.
 
