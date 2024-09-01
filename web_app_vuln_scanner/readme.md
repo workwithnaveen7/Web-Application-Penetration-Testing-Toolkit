@@ -18,7 +18,7 @@ This project is a web application vulnerability scanner that uses the OWASP ZAP 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/web-app-vuln-scanner.git
+    git clone https://github.com/workwithnaveen7/Web-Application-Penetration-Testing-Toolkit/tree/main/web_app_vuln_scanner
     cd web-app-vuln-scanner
     ```
 
