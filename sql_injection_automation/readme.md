@@ -15,19 +15,7 @@ This Python-based tool is designed to scan a given URL for SQL injection vulnera
 - `requests` library
 - SQLMap installed and configured on your system
 
-## Installation
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/workwithnaveen7/Web-Application-Penetration-Testing-Toolkit/tree/main/sql_injection_automation
-   cd sql-injection-automation
-
-2. **Install Required Python Packages:**
-   ```bash
-   pip install requests
-
-3. **Ensure SQLMap is Installed: SQLMap must be installed and accessible from the command line.**
-   
 ## Usage
 
 1. **Run the Tool:**
