@@ -31,13 +31,14 @@ To get started with the tools in this repository, follow these steps:
     ```
 
 2. **Navigate to the Desired Tool**:
-   - For SQL Injection Testing Automation: `cd sql-injection-automation-tool`
+   - For SQL Injection Testing Automation: `cd sql-injection-automation`
    - For Web Application Vulnerability Scanner: `cd web-app-vuln-scanner`
 
 3. **Install Required Packages**:
    - For SQL Injection Testing Automation:
      ```bash
-     pip install -r requirements.txt
+     pip install requests
+     pip install sqlmap
      ```
    - For Web Application Vulnerability Scanner:
      ```bash
@@ -47,7 +48,7 @@ To get started with the tools in this repository, follow these steps:
 4. **Run the Tools**:
    - For SQL Injection Testing Automation:
      ```bash
-     python sql_injection_automation.py -u https://example.com/login
+     python sql_injection.py
      ```
    - For Web Application Vulnerability Scanner:
      ```bash
