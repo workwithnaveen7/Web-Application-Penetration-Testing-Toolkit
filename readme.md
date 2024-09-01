@@ -11,7 +11,7 @@ This repository contains two distinct tools, each designed for specific vulnerab
 - **Key Features**:
   - **Automated Detection**: Leverages SQLMap along with custom payloads.
   - **HTML Reporting**: Detailed HTML report of detected SQL injection vulnerabilities.
-- **Folder**: `sql-injection-automation-tool`
+- **Folder**: `sql-injection-automation`
 
 ### 2️⃣ Web Application Vulnerability Scanner
 - **Description**: Utilizes the OWASP ZAP (Zed Attack Proxy) API to perform automated vulnerability scans on a target URL, identifying a range of common vulnerabilities and generating a detailed report.
