@@ -1,17 +1,17 @@
 from zapv2 import ZAPv2
 import time
 
-# Configuration
-API_KEY = 'd0t812v737odei53lda18er4dk'  # Replace with your ZAP API key
-ZAP_URL = 'http://localhost:8080'  # ZAP's URL
-TARGET_URL = input("Enter The URL:")  # Replace with your target URL
+#config
+API_KEY = 'your zap api key'  #replace with your ZAP API key
+ZAP_URL = 'http://localhost:8080'  
+TARGET_URL = input("Enter The URL:")  
 
 def start_zap_scan(target_url):
     zap = ZAPv2(apikey=API_KEY, proxies={'http': ZAP_URL, 'https': ZAP_URL})
     
     print(f"Accessing target URL: {target_url}")
     zap.urlopen(target_url)
-    time.sleep(5)  # Wait for the site to load
+    time.sleep(5) 
     
     print("Starting active scan...")
     scan_id = zap.ascan.scan(target_url, apikey=API_KEY)
