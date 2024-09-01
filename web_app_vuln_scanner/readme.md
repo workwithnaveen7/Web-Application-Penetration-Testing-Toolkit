@@ -14,20 +14,6 @@ This project is a web application vulnerability scanner that uses the OWASP ZAP 
 - [OWASP ZAP](https://www.zaproxy.org/) installed and running locally or remotely
 - Python `zapv2` module (`pip install python-owasp-zap-v2.4`)
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/workwithnaveen7/Web-Application-Penetration-Testing-Toolkit/tree/main/web_app_vuln_scanner
-    cd web-app-vuln-scanner
-    ```
-
-2. Install the required Python packages:
-    ```bash
-    pip install python-owasp-zap-v2.4
-    ```
-
-3. Start the OWASP ZAP application on your machine or server.
 
 ## Usage
 
