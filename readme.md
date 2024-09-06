@@ -77,6 +77,17 @@ To get started with the tools in this repository, follow these steps:
 - **Web Application Vulnerability Scanner**: Produces an HTML report with a summary of all detected vulnerabilities.
 
 
+
+Vulnerability Scanner
+
+https://github.com/user-attachments/assets/1a73cc83-c560-409e-9c46-125116d78b9b
+
+SQL Injection Automation
+
+https://github.com/user-attachments/assets/e1282e23-14ee-4769-ad53-49fda71bd32e
+
+
+
 ---
 
 Enhance your web application's security with the **Web Application Penetration Testing Toolkit**! 🌐🛡️
